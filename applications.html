@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявки | Администрирование GreenWork</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<script>
+  if (typeof isAdminLoggedIn === 'function' && !isAdminLoggedIn()) {
+    window.location.href = 'login.html';
+  }
+</script>
+<header>
+  <div class="container header-inner">
+    <div class="logo">GreenWork<span>Чита</span></div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="coworkings.html">Коворкинги</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Поступившие заявки на коворкинги</h1>
+  <p>Здесь хранятся все заявки клиентов. Вы можете удалить любую запись. Данные сохраняются в вашем браузере.</p>
+  <div style="overflow-x: auto; margin-top: 30px;">
+    <table class="applications-table">
+      <thead>
+        <tr><th>ФИО</th><th>Телефон</th><th>Email</th><th>Коворкинг</th><th>Дата и время</th><th>Действие</th></tr>
+      </thead>
+      <tbody id="applicationsTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>GreenWork</h4><p>Коворкинги в Забайкальском крае</p><p>Создаём рабочее пространство нового типа</p></div>
+      <div class="footer-col"><h4>Контакты</h4><p>+7 (924) 123-45-67</p><p>hello@greenworkchita.ru</p><p>ул. Ленина, 25, Чита</p></div>
+      <div class="footer-col"><h4>Режим работы</h4><p>Ежедневно с 09:00 до 21:00</p><p>Поддержка 24/7 для резидентов</p></div>
+    </div>
+    <div class="copyright">© 2026 GreenWork — природные пространства для работы в Чите</div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="applications.js"></script>
+</body>
+</html>

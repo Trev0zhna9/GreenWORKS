@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenWork | Коворкинги в Чите</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">GreenWork<span>Чита</span></div>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="coworkings.html">Коворкинги</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="hero">
+      <h1>Работайте в гармонии с природой</h1>
+      <p>Коворкинги в Чите с зелёной атмосферой, светом и уютом для ваших проектов</p>
+      <div style="margin-top: 40px;">
+        <button class="btn-primary" id="heroOpenModal">Выбрать коворкинг</button>
+      </div>
+    </div>
+
+    <section>
+      <h2 style="text-align: center;">Почему выбирают GreenWork</h2>
+      <div class="feature-grid">
+        <div class="feature-item"><strong>Природные материалы</strong><br>Живые растения, дерево, натуральное освещение</div>
+        <div class="feature-item"><strong>Гибкие тарифы</strong><br>Почасовая оплата, дневные абонементы, фикс-места</div>
+        <div class="feature-item"><strong>Для любых задач</strong><br>Переговорки, тихие зоны, кухни, парковки</div>
+      </div>
+    </section>
+
+    <section style="margin: 60px 0;">
+      <h2 style="text-align: center;">Вдохновляющие пространства</h2>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+        <div class="gallery-card" style="width: 280px; border-radius: 24px; overflow: hidden; background: white;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIY3rFVT3aRhZTrpa0wPMt7Jq5xcLt28Gfnw&s" style="width:100%; height:180px; object-fit:cover;"><div style="padding: 12px;">Светлая зона отдыха</div></div>
+        <div class="gallery-card" style="width: 280px; border-radius: 24px; overflow: hidden; background: white;"><img src="data:image/jpeg;base64,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" style="width:100%; height:180px; object-fit:cover;"><div style="padding: 12px;">Командный офис</div></div>
+        <div class="gallery-card" style="width: 280px; border-radius: 24px; overflow: hidden; background: white;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpQfAU3nrbGbPHaCVkiAj1PHQ-oVlM8l2z2w&s" style="width:100%; height:180px; object-fit:cover;"><div style="padding: 12px;">Терраса на крыше</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Популярные коворкинги</h2>
+      <div id="homeCoworkingsPreview" class="cards-grid"></div>
+      <div style="text-align: center; margin: 20px 0;"><a href="coworkings.html" class="btn-outline">Смотреть все коворкинги</a></div>
+    </section>
+
+    <section style="background: #eef4e0; border-radius: 48px; padding: 48px 32px; margin: 60px 0;">
+      <h2 style="text-align: center;">Как арендовать место?</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px;">
+        <div style="text-align: center; max-width: 200px;"><span style="font-size: 2rem;">1</span><br><strong>Выберите коворкинг</strong><br>на странице списка</div>
+        <div style="text-align: center; max-width: 200px;"><span style="font-size: 2rem;">2</span><br><strong>Оставьте заявку</strong><br>через плавающую кнопку</div>
+        <div style="text-align: center; max-width: 200px;"><span style="font-size: 2rem;">3</span><br><strong>Мы свяжемся</strong><br>в течение 15 минут</div>
+        <div style="text-align: center; max-width: 200px;"><span style="font-size: 2rem;">4</span><br><strong>Вы начинаете работу</strong><br>в уютном пространстве</div>
+      </div>
+    </section>
+
+    <section style="background: #f2f6ec; border-radius: 40px; padding: 40px; margin: 60px 0;">
+      <h2>Отзывы наших резидентов</h2>
+      <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 30px;">
+        <div class="review-card"><p>“Отличное место для сосредоточенной работы. Чисто, тихо, есть всё необходимое.”</p><strong>— Анна, дизайнер</strong></div>
+        <div class="review-card"><p>“Мы арендуем офис на 4 места для нашей IT-команды. Очень удобно, в центре Читы.”</p><strong>— Дмитрий, руководитель стартапа</strong></div>
+        <div class="review-card"><p>“Приятный зелёный интерьер, вежливый персонал, рекомендую всем фрилансерам.”</p><strong>— Елена, копирайтер</strong></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>GreenWork</h4><p>Коворкинги в Забайкальском крае</p><p>Создаём рабочее пространство нового типа</p></div>
+      <div class="footer-col"><h4>Контакты</h4><p>+7 (924) 123-45-67</p><p>hello@greenworkchita.ru</p><p>ул. Ленина, 25, Чита</p></div>
+      <div class="footer-col"><h4>Режим работы</h4><p>Ежедневно с 09:00 до 21:00</p><p>Поддержка 24/7 для резидентов</p></div>
+    </div>
+    <div class="copyright">© 2026 GreenWork — природные пространства для работы в Чите</div>
+  </div>
+</footer>
+
+<div id="feedbackModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">×</span>
+    <h3>Оставить заявку</h3>
+    <form id="feedbackForm">
+      <div class="form-group"><label>ФИО</label><input type="text" id="fbName" required placeholder="Иванов Иван Иванович"></div>
+      <div class="form-group"><label>Телефон</label><input type="tel" id="fbPhone" required placeholder="+7 999 123-45-67"></div>
+      <div class="form-group"><label>Email</label><input type="email" id="fbEmail" required placeholder="ivan@example.com"></div>
+      <div class="form-group"><label>Интересующий коворкинг</label><select id="coworkingSelect" required></select></div>
+      <div class="form-group"><label>Комментарий</label><textarea id="fbComment" rows="2" placeholder="Дополнительные пожелания..."></textarea></div>
+      <button type="submit" class="btn-primary">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+<button id="floatingBtn" class="floating-btn">Заявка</button>
+
+<script src="main.js"></script>
+<script>
+  const heroBtn = document.getElementById("heroOpenModal");
+  if(heroBtn) heroBtn.onclick = () => { const m = document.getElementById("feedbackModal"); if(m) m.style.display="flex"; populateCoworkingSelect("coworkingSelect"); };
+</script>
+</body>
+</html>
